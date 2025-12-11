@@ -79,23 +79,18 @@ Available arguments:
 
 ### Important Note on TCGA Data Files
 
-Due to GitHub’s file size restrictions, the following large raw TCGA files have been **removed** from 
-`DE/` and `KEGG/` directories:
+Case Study Data Availability
 
-- `TCGA-BLCA.htseq_fpkm.tsv.gz`
+To ensure full reproducibility of the differential expression analysis (Figures 7 and 8), we provide the original TCGA expression matrix used in our experiments. Since the historical version of the TCGA-BLCA dataset used in this study is no longer available on the current UCSC Xena platform and the file size exceeds GitHub’s standard limit (100 MB), the data has been uploaded via GitHub Releases.
 
-This file is larger than 100MB and cannot be stored on GitHub.
+The dataset can be downloaded at:
 
-If users or reviewers need this raw dataset, it can be downloaded directly from:
+TCGA-BLCA FPKM expression matrix (historical version)
+Download from GitHub Releases
 
-- **TCGA GDC Portal**  
-  https://portal.gdc.cancer.gov/
+File: TCGA-BLCA.htseq_fpkm.tsv.gz
 
-or from the **UCSC Xena Database**:
-
-- https://xenabrowser.net/datapages/
-
-All analysis scripts remain fully reproducible once the required raw TCGA files are placed in the corresponding directory.
+After downloading, place the file into the corresponding folder in CaseStudy/DE/ or CaseStudy/KEGG/ as required by the R scripts.
 
 
 ## License
